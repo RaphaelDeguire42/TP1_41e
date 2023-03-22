@@ -589,4 +589,25 @@ section {
 .entete .menu__recherche .burgerBox {
   order: 2;
   display: flex;
+}
+
+.tableau__titre {
+  font-weight: bold;
+  color: #ffffe8;
+  letter-spacing: 3px;
+}
+
+.tableau {
+  background-color: #ffffe8;
+  width: 80%;
+  border-collapse: collapse;
+}
+.tableau th, .tableau td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+.tableau th {
+  background-color: rgb(56, 182, 255);
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
