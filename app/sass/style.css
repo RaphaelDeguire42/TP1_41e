@@ -514,21 +514,31 @@ section {
 
 .entete {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 10vh 0;
-  justify-content: space-around;
+  align-items: center;
+  gap: 10vh;
+  justify-content: flex-start;
+}
+.entete .logo {
+  width: 250px;
+}
+.entete .menu__recherche {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
 }
 .entete .menu__recherche .menu {
   display: flex;
+  order: 1;
   gap: 2em;
   width: 100%;
-  background-color: black;
   padding: 1em;
 }
 .entete .menu__recherche .menu a {
   color: rgb(54, 54, 252);
   font-weight: 700;
+  font-size: 1.5em;
 }
 .entete .menu__recherche .menu a:hover {
   text-decoration: underline;
@@ -543,4 +553,12 @@ section {
   border-left: none;
   border-right: none;
   border-bottom: 2px solid rgb(54, 54, 252);
+  padding: 0.5em 0.75em;
+}
+.entete .menu__recherche form {
+  order: 3;
+}
+.entete .menu__recherche .burgerBox {
+  order: 2;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

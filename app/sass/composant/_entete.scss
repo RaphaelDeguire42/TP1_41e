@@ -2,20 +2,28 @@ $accentColor: rgb(54, 54, 252);
 
 .entete{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10vh 0;
-    justify-content: space-around;
+    align-items: center;
+    gap: 10vh;
+    justify-content: flex-start;
+    .logo{
+        width: 250px;
+    }
     .menu__recherche{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
         .menu{
             display: flex;
+            order: 1;
             gap: 2em;
             width: 100%;
-            background-color: black;
             padding: 1em;
             a{
                 color: $accentColor;
                 font-weight: 700;
+                font-size: 1.5em;
                 &:hover{
                     text-decoration: underline;
                 }
@@ -29,8 +37,16 @@ $accentColor: rgb(54, 54, 252);
                 border-top: none;
                 border-left: none;
                 border-right: none;
-                border-bottom: 2px solid $accentColor ;
+                border-bottom: 2px solid $accentColor;
+                padding: 0.5em 0.75em;
             }
+        }
+        form{
+            order: 3;
+        }
+        .burgerBox{
+            order: 2;
+            display: flex;
         }
     }
 }
