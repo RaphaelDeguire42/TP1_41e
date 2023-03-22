@@ -514,10 +514,21 @@ section {
 .entete {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-direction: column;
-  gap: 10vh;
+  gap: 0vh;
+  padding: 2em 0;
   background-color: #ffffe8;
+}
+@media screen and (min-width: 850px) {
+  .entete {
+    gap: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0;
+  }
 }
 .entete .logo {
   width: 250px;
@@ -531,15 +542,23 @@ section {
 }
 .entete .menu__recherche .menu {
   display: flex;
+  flex-direction: column;
   order: 1;
-  gap: 2em;
+  gap: 1em;
   padding: 1em;
   width: 100%;
+}
+@media screen and (min-width: 850px) {
+  .entete .menu__recherche .menu {
+    flex-direction: row;
+    gap: 2em;
+  }
 }
 .entete .menu__recherche .menu a {
   color: rgb(56, 182, 255);
   font-weight: 700;
   font-size: 1.5em;
+  text-align: center;
 }
 .entete .menu__recherche .menu a:hover {
   text-decoration: underline;

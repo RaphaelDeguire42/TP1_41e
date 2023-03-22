@@ -9,8 +9,14 @@ $bgColor: #ffffe8;
 }
 
 .entete{
-    @include flexCenter(flex-start, column);
-    gap: 10vh;
+    @include flexCenter(space-between, column);
+    gap: 0vh;
+    padding: 2em 0;
+    @media screen and (min-width: 850px) {
+        gap: 10vh;
+        @include flexCenter(flex-start, column);
+        padding: 0;
+    }
     background-color: $bgColor;
     .logo{
         width: 250px;
@@ -20,14 +26,20 @@ $bgColor: #ffffe8;
         gap: 2em;
         .menu{
             display: flex;
+            flex-direction: column;
             order: 1;
-            gap: 2em;
+            gap: 1em;
             padding: 1em;
             width: 100%;
+            @media screen and (min-width: 850px) {
+                flex-direction: row;
+                gap: 2em;
+            }
             a{
                 color: $accentColor;
                 font-weight: 700;
                 font-size: 1.5em;
+                text-align: center;
                 &:hover{
                     text-decoration: underline;
                 }
