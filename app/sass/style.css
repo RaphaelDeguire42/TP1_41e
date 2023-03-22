@@ -517,7 +517,7 @@ section {
   justify-content: flex-start;
   flex-direction: column;
   gap: 10vh;
-  background-color: beige;
+  background-color: #ffffe8;
 }
 .entete .logo {
   width: 250px;
@@ -537,7 +537,7 @@ section {
   width: 100%;
 }
 .entete .menu__recherche .menu a {
-  color: rgb(218, 49, 49);
+  color: rgb(56, 182, 255);
   font-weight: 700;
   font-size: 1.5em;
 }
@@ -555,12 +555,16 @@ section {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid rgb(218, 49, 49);
+  border-bottom: 2px solid rgb(56, 182, 255);
   padding: 0.5em 0.75em;
-  background-color: beige;
+  background-color: #ffffe8;
 }
 .entete .menu__recherche form {
   order: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 }
 .entete .menu__recherche .burgerBox {
   order: 2;

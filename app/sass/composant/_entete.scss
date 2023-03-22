@@ -1,5 +1,5 @@
-$accentColor: rgb(218 49 49);
-$bgColor: beige;
+$accentColor: rgb(56 182 255);
+$bgColor: #ffffe8;
 
 @mixin flexCenter($justify, $direction){
     display: flex;
@@ -47,6 +47,7 @@ $bgColor: beige;
         }
         form{
             order: 3;
+            @include flexCenter(space-between, row)
         }
         .burgerBox{
             order: 2;
