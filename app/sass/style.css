@@ -81,8 +81,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -514,14 +513,33 @@ section {
 
 .entete {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10vh;
+  background-color: beige;
+}
+.entete .logo {
+  width: 250px;
+}
+.entete .menu__recherche {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2em;
 }
 .entete .menu__recherche .menu {
   display: flex;
+  order: 1;
   gap: 2em;
+  padding: 1em;
+  width: 100%;
 }
 .entete .menu__recherche .menu a {
-  color: rgb(54, 54, 252);
+  color: rgb(218, 49, 49);
+  font-weight: 700;
+  font-size: 1.5em;
 }
 .entete .menu__recherche .menu a:hover {
   text-decoration: underline;
@@ -529,11 +547,22 @@ section {
 .entete .menu__recherche .recherche label {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
   gap: 0.75em;
 }
 .entete .menu__recherche .recherche label input {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 2px solid rgb(54, 54, 252);
+  border-bottom: 2px solid rgb(218, 49, 49);
+  padding: 0.5em 0.75em;
+  background-color: beige;
+}
+.entete .menu__recherche form {
+  order: 3;
+}
+.entete .menu__recherche .burgerBox {
+  order: 2;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

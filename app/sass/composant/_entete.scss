@@ -1,29 +1,56 @@
-$accentColor: rgb(54, 54, 252);
+$accentColor: rgb(218 49 49);
+$bgColor: beige;
+
+@mixin flexCenter($justify, $direction){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
 
 .entete{
-    display: flex;
-    flex-direction: row;
+    @include flexCenter(flex-start, column);
+    gap: 10vh;
+    background-color: $bgColor;
+    .logo{
+        width: 250px;
+    }
     .menu__recherche{
+        @include flexCenter(flex-start, column);
+        gap: 2em;
         .menu{
             display: flex;
+            order: 1;
             gap: 2em;
+            padding: 1em;
+            width: 100%;
             a{
                 color: $accentColor;
+                font-weight: 700;
+                font-size: 1.5em;
                 &:hover{
                     text-decoration: underline;
                 }
             }
         }
         .recherche label{
-            display: flex;
-            align-items: center;
+            @include flexCenter(flex-start, row);
             gap: 0.75em;
             input{
                 border-top: none;
                 border-left: none;
                 border-right: none;
-                border-bottom: 2px solid $accentColor ;
+                border-bottom: 2px solid $accentColor;
+                padding: 0.5em 0.75em;
+                background-color: $bgColor;
             }
+        }
+        form{
+            order: 3;
+        }
+        .burgerBox{
+            order: 2;
+            display: flex;
         }
     }
 }
