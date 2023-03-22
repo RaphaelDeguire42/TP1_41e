@@ -4,6 +4,7 @@ Theme URI: https://referenced.ca
 Author: Eddy Martin
 Author URI: https://github.com/eddytuto
 */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bentham&family=Lexend&family=Literata:opsz@7..72&family=Montserrat&family=Playfair+Display&family=Playfair+Display+SC:wght@900&family=Poppins&family=Roboto&display=swap');
 
 /* -------------------------------------------- normalize */
 @import "normalize/normalize";
@@ -15,3 +16,6 @@ Author URI: https://github.com/eddytuto
 
 /* --------------------------------------------- layout */
 @import "layout/layout";
+
+
+@import "composant/entete";
