@@ -3,12 +3,19 @@ $accentColor: rgb(54, 54, 252);
 .entete{
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    padding: 10vh 0;
+    justify-content: space-around;
     .menu__recherche{
         .menu{
             display: flex;
             gap: 2em;
+            width: 100%;
+            background-color: black;
+            padding: 1em;
             a{
                 color: $accentColor;
+                font-weight: 700;
                 &:hover{
                     text-decoration: underline;
                 }
