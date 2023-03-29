@@ -332,9 +332,9 @@ html {
 }
 
 /* --------------------------------------------- base */
-/* 
+/*
 Pour configurer les trois paramètre de la propriété clamp()
-https://clamp.font-size.app 
+https://clamp.font-size.app
 */
 h1 {
   font-size: clamp(2rem, -0.75rem + 4.8vw, 3.75rem);
@@ -586,9 +586,13 @@ section {
   justify-content: space-between;
   flex-direction: row;
 }
-.entete .menu__recherche .burgerBox {
+.entete .menu__recherche{
   order: 2;
   display: flex;
+}
+
+form div.burgerBox{
+  display:none;
 }
 
 .tableau__titre {
