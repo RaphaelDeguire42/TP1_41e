@@ -590,6 +590,46 @@ section {
   display: none;
 }
 
+#inscription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  background-color: #ffffe8;
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid #b9b96f;
+}
+form .inputBox input {
+  background-color: #ffffe8 !important;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid 3px rgb(238, 234, 16);
+  padding: 0.5em 0.7em;
+  width: 25ch;
+}
+form button {
+  padding: 0.4em 0.7em;
+  background-color: rgb(238, 234, 16);
+  border: none;
+  border-radius: 3px;
+}
+form button:hover {
+  background-color: rgb(223, 220, 35);
+  cursor: pointer;
+}
+
 .tableau__titre {
   font-weight: bold;
   color: #ffffe8;
@@ -618,19 +658,19 @@ section {
 }
 .grid img {
   max-width: 100%;
-  transform: scale(0.9);
+  transform: scale(1);
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
 }
 .grid img:hover {
   max-width: 100%;
-  transform: scale(1);
+  transform: scale(0.9);
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
   cursor: pointer;
 }
 .grid picture {
-  width: 300px;
+  width: 15vw;
 }
 
 #galerie {

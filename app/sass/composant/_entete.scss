@@ -1,13 +1,6 @@
 $accentColor: rgb(56 182 255);
 $bgColor: #ffffe8;
 
-@mixin flexCenter($justify, $direction){
-    display: flex;
-    align-items: center;
-    justify-content: $justify;
-    flex-direction: $direction;
-}
-
 .entete{
     @include flexCenter(space-between, column);
     gap: 0vh;
