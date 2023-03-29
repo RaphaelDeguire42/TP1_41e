@@ -1,0 +1,19 @@
+@mixin grid($num_row, $gouttiere){
+   display: grid;
+   gap: $gouttiere;
+   grid-template-columns: repeat($num_row, 1fr);
+}
+
+.grid{
+   @include grid(3, 3vw);
+   img{
+      width: 100%
+   }
+   picture{
+      width: 200px;
+   }
+}
+
+#galerie{
+   @include flexCenter(space-around, column);
+}

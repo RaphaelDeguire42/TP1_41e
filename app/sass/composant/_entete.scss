@@ -62,8 +62,7 @@ $bgColor: #ffffe8;
             @include flexCenter(space-between, row)
         }
         .burgerBox{
-            order: 2;
-            display: flex;
+            display: none;
         }
     }
 }
