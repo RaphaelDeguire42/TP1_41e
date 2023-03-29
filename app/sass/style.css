@@ -488,10 +488,6 @@ section {
   min-height: 100vh;
 }
 
-#accueil {
-  background-color: aquamarine;
-}
-
 #inscription {
   background-color: rgb(238, 234, 16);
 }
@@ -588,6 +584,10 @@ section {
 }
 .entete .menu__recherche .burgerBox {
   display: none;
+}
+
+#accueil {
+  background-image: url(../../../app/img/git-pic.webp);
 }
 
 .tableau__titre {
