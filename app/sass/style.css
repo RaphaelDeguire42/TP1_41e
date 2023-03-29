@@ -332,9 +332,9 @@ html {
 }
 
 /* --------------------------------------------- base */
-/*
+/* 
 Pour configurer les trois paramètre de la propriété clamp()
-https://clamp.font-size.app
+https://clamp.font-size.app 
 */
 h1 {
   font-size: clamp(2rem, -0.75rem + 4.8vw, 3.75rem);
@@ -586,13 +586,8 @@ section {
   justify-content: space-between;
   flex-direction: row;
 }
-.entete .menu__recherche{
-  order: 2;
-  display: flex;
-}
-
-form div.burgerBox{
-  display:none;
+.entete .menu__recherche .burgerBox {
+  display: none;
 }
 
 .tableau__titre {
@@ -614,4 +609,33 @@ form div.burgerBox{
 .tableau th {
   background-color: rgb(56, 182, 255);
   font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  gap: 3vw;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid img {
+  max-width: 100%;
+  transform: scale(0.9);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+}
+.grid img:hover {
+  max-width: 100%;
+  transform: scale(1);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.grid picture {
+  width: 300px;
+}
+
+#galerie {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

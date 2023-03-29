@@ -1,0 +1,33 @@
+@mixin grid($num_row, $gouttiere){
+   display: grid;
+   gap: $gouttiere;
+   grid-template-columns: repeat($num_row, 1fr);
+}
+
+@mixin popingImg($duration, $scale){
+   max-width: 100%;
+   transform: scale($scale);
+   transition-timing-function: ease-in-out;
+   transition-duration: $duration;
+}
+
+.grid{
+   @include grid(3, 3vw);
+   img{
+      @include popingImg(0.3s, 0.9);
+      &:hover{
+         @include popingImg(0.3s, 1);
+         cursor: pointer;
+      }
+   }
+   picture{
+      width: 300px;
+   }
+}
+
+#galerie{
+   @include flexCenter(space-around, column);
+}
+
+
+
