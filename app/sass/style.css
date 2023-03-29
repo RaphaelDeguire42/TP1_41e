@@ -489,7 +489,8 @@ section {
 }
 
 #accueil {
-  background-color: aquamarine;
+  background-image: url(../../../app/img/git-pic.webp);
+  background-repeat: round;
 }
 
 #inscription {
