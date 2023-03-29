@@ -17,9 +17,10 @@ section {
   min-height: 100vh;
 }
 
-// #accueil {
-//   background-color: aquamarine;
-// }
+#accueil {
+  background-image: url(../../../app/img/git-pic.webp);
+  background-repeat: round;
+}
 #inscription {
   background-color: rgb(238, 234, 16);
 }
