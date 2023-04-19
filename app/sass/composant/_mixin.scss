@@ -17,3 +17,99 @@
    transition-timing-function: ease-in-out;
    transition-duration: $duration;
 }
+
+@mixin fade-in($duration: 1s) {
+   opacity: 0;
+   animation: fade-in $duration ease-in-out forwards;
+
+   // add this to stop the animation
+   &.fade-in-cancel {
+     animation: none;
+   }
+ }
+
+ @keyframes fade-in {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+
+
+ @mixin slide-in($direction: left, $duration: 1s) {
+   transform: translateX(-100%);
+   animation: slide-in-#{$direction} #{$duration} ease-in-out forwards;
+
+   // add this to reset the transform after the animation is complete
+   &.slide-in-complete {
+     transform: none;
+   }
+ }
+
+ @keyframes slide-in-left {
+   0% {
+     transform: translateX(-100%);
+   }
+   100% {
+     transform: translateX(0);
+   }
+ }
+
+ @keyframes slide-in-right {
+   0% {
+     transform: translateX(100%);
+   }
+   100% {
+     transform: translateX(0);
+   }
+ }
+
+
+
+
+ @mixin rotate_right($duration: 1s) {
+   animation: rotate $duration linear infinite;
+ }
+
+ @keyframes rotate {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+
+ @mixin rotate_left($duration: 1s) {
+   animation: rotate_left $duration linear infinite;
+ }
+
+ @keyframes rotate_left {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(-360deg);
+   }
+ }
+
+ @mixin grow($duration: 1s) {
+   transform: scale(0);
+   animation: grow $duration ease-in-out forwards;
+
+   // add this to stop the animation
+   &.grow-cancel {
+     animation: none;
+   }
+ }
+
+ @keyframes grow {
+   0% {
+     transform: scale(0);
+   }
+   100% {
+     transform: scale(1);
+   }
+ }
