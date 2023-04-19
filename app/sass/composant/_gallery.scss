@@ -1,23 +1,50 @@
-
-
-.grid{
-   @include grid(3, 3vw);
-   img{
-      @include popingImg(0.3s, 1);
-      &:hover{
-         @include popingImg(0.3s, 0.9);
-         cursor: pointer;
-      }
+.grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 3vw;
+  
+   img {
+     transition: transform 0.3s ease-in-out;
+     max-width: 100%;
+     height: auto;
+     object-fit: cover;
+      
+     &:hover {
+       transform: scale(0.9);
+       cursor: pointer;
+     }
    }
-   picture{
-      width: 15vw;
+  
+   picture {
+     width: 15vw;
    }
-}
-
-#galerie{
-   @include flexCenter(space-around, column);
-}
-
-
-
-
+  
+   @media screen and (max-width: 768px) {
+     grid-template-columns: repeat(2, 1fr);
+     gap: 2vw;
+  
+     picture {
+       width: 40vw;
+     }
+   }
+  
+   @media screen and (max-width: 480px) {
+     grid-template-columns: repeat(1, 1fr);
+     gap: 1vw;
+  
+     picture {
+       width: 80vw;
+     }
+   }
+ }
+  
+ #galerie {
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+    
+   @media screen and (max-width: 768px) {
+     align-items: center;
+   }
+ }
+ 
