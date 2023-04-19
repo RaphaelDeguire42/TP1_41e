@@ -536,29 +536,33 @@ section {
   min-height: 100vh;
 }
 
+.entete {
+  background-color: #F8F272;
+}
+
 #accueil {
   background-image: url(../../../app/img/git-pic.webp);
   background-repeat: round;
 }
 
 #inscription {
-  background-color: rgb(238, 234, 16);
+  background-color: #498b76;
 }
 
 #galerie {
-  background-color: rgb(236, 119, 41);
+  background-color: #FE5F55;
 }
 
 #tableau {
-  background-color: rgb(74, 96, 225);
+  background-color: #30BCED;
 }
 
 #video {
-  background-color: rgb(195, 127, 255);
+  background-color: #FC5130;
 }
 
 #pied-page {
-  background-color: rgb(27, 176, 214);
+  background-color: #2E294E;
 }
 
 .entete {
@@ -568,7 +572,6 @@ section {
   flex-direction: column;
   gap: 0vh;
   padding: 2em 0;
-  background-color: #ffffe8;
 }
 @media screen and (min-width: 850px) {
   .entete {

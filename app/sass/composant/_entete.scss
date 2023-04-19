@@ -10,7 +10,6 @@ $bgColor: #ffffe8;
         @include flexCenter(flex-start, column);
         padding: 0;
     }
-    background-color: $bgColor;
     .logo{
         width: 250px;
     }

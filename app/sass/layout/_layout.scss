@@ -1,3 +1,10 @@
+$bgFront: #F8F272;
+$bg1:#498b76;
+$bg2:#FE5F55;
+$bg3:#30BCED;
+$bg4:#FC5130;
+$bg5:#2E294E;
+
 html {
   scroll-behavior: smooth;
   font-family: Poppins
@@ -17,22 +24,26 @@ section {
   min-height: 100vh;
 }
 
+.entete{
+  background-color: $bgFront;
+}
+
 #accueil {
   background-image: url(../../../app/img/git-pic.webp);
   background-repeat: round;
 }
 #inscription {
-  background-color: rgb(238, 234, 16);
+  background-color: $bg1;
 }
 #galerie {
-  background-color: rgb(236, 119, 41);
+  background-color:$bg2;
 }
 #tableau {
-  background-color: rgb(74, 96, 225);
+  background-color: $bg3;
 }
 #video {
-  background-color: rgb(195, 127, 255);
+  background-color: $bg4;
 }
 #pied-page {
-  background-color: rgb(27, 176, 214);
+  background-color: $bg5;
 }
