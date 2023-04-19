@@ -331,6 +331,54 @@ html {
   box-sizing: border-box;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate_left {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* --------------------------------------------- base */
 /* 
 Pour configurer les trois paramètre de la propriété clamp()
@@ -679,4 +727,36 @@ form button:hover {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+}
+
+.gallery picture:nth-child(even):hover {
+  animation: rotate 10s linear infinite;
+}
+
+.gallery picture:nth-child(odd):hover {
+  animation: rotate_left 10s linear infinite;
+}
+
+.tableau {
+  transform: translateX(-100%);
+  animation: slide-in-left 4s ease-in-out forwards;
+}
+.tableau.slide-in-complete {
+  transform: none;
+}
+
+#video {
+  opacity: 0;
+  animation: fade-in 2s ease-in-out forwards;
+}
+#video.fade-in-cancel {
+  animation: none;
+}
+
+#inscription form {
+  transform: scale(0);
+  animation: grow 3s ease-in-out forwards;
+}
+#inscription form.grow-cancel {
+  animation: none;
 }/*# sourceMappingURL=style.css.map */
