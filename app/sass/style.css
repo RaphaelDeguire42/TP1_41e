@@ -541,8 +541,19 @@ section {
 }
 
 #accueil {
-  background-image: url(../../../app/img/git-pic.webp);
+  background-image: url(../../../app/img/gitminou.png);
   background-repeat: round;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#accueil h1 {
+  position: absolute;
+  left: 75%;
+  transform: translateX(-50%);
+  color: white;
 }
 
 #inscription {
