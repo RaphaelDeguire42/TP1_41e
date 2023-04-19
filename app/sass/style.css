@@ -331,6 +331,54 @@ html {
   box-sizing: border-box;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate_left {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* --------------------------------------------- base */
 /* 
 Pour configurer les trois paramètre de la propriété clamp()
@@ -488,26 +536,51 @@ section {
   min-height: 100vh;
 }
 
+
+.entete {
+  background-color: #F8F272;
+}
+
+#accueil {
+  background-image: url(../../../app/img/gitminou.png);
+  background-repeat: round;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#accueil h1 {
+  position: absolute;
+  left: 75%;
+  transform: translateX(-50%);
+  color: white;
+}
+
 #inscription {
-  background-color: rgb(238, 234, 16);
+  background-color: #498b76;
 }
 
 #galerie {
-  background-color: rgb(236, 119, 41);
+  background-color: #FE5F55;
 }
 
 #tableau {
-  background-color: rgb(74, 96, 225);
+  background-color: #30BCED;
 }
 
 #video {
-  background-color: rgb(195, 127, 255);
+  background-color: #FC5130;
 }
 
 #pied-page {
-  background-color: rgb(27, 176, 214);
+
+
   height: 100%;
   position: relative;
+
+  background-color: #2E294E;
+
 }
 
 .entete {
@@ -517,7 +590,6 @@ section {
   flex-direction: column;
   gap: 0vh;
   padding: 2em 0;
-  background-color: #ffffe8;
 }
 @media screen and (min-width: 850px) {
   .entete {
@@ -683,6 +755,7 @@ form button:hover {
   flex-direction: column;
 }
 
+
 footer {
   background: #333;
   padding: 3em 1em;
@@ -724,4 +797,36 @@ footer {
 .social-link {
   display: inline-block;
   margin-bottom: 5px;
+
+.gallery picture:nth-child(even):hover {
+  animation: rotate 10s linear infinite;
+}
+
+.gallery picture:nth-child(odd):hover {
+  animation: rotate_left 10s linear infinite;
+}
+
+.tableau {
+  transform: translateX(-100%);
+  animation: slide-in-left 4s ease-in-out forwards;
+}
+.tableau.slide-in-complete {
+  transform: none;
+}
+
+#video {
+  opacity: 0;
+  animation: fade-in 2s ease-in-out forwards;
+}
+#video.fade-in-cancel {
+  animation: none;
+}
+
+#inscription form {
+  transform: scale(0);
+  animation: grow 3s ease-in-out forwards;
+}
+#inscription form.grow-cancel {
+  animation: none;
+
 }/*# sourceMappingURL=style.css.map */

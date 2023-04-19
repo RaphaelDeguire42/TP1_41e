@@ -1,0 +1,18 @@
+ .gallery picture:nth-child(even):hover{
+   @include rotate_right(10s);
+ }
+ .gallery picture:nth-child(odd):hover{
+   @include rotate_left(10s);
+ }
+
+ .tableau{
+   @include slide-in(left, 4s)
+ }
+
+ #video{
+   @include fade-in(2s);
+ }
+
+ #inscription form{
+   @include grow(3s);
+ }
