@@ -488,11 +488,6 @@ section {
   min-height: 100vh;
 }
 
-#accueil {
-  background-image: url(../../../app/img/git-pic.webp);
-  background-repeat: round;
-}
-
 #inscription {
   background-color: rgb(238, 234, 16);
 }
@@ -511,6 +506,8 @@ section {
 
 #pied-page {
   background-color: rgb(27, 176, 214);
+  height: 100%;
+  position: relative;
 }
 
 .entete {
@@ -631,8 +628,9 @@ form button:hover {
   cursor: pointer;
 }
 
-#accueil {
-  background-image: url(../../../app/img/git-pic.webp);
+.primary-header {
+  background-image: url(../../../app/img/git_pic.webp);
+  background-repeat: round;
 }
 
 .tableau__titre {
@@ -683,4 +681,47 @@ form button:hover {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+}
+
+footer {
+  background: #333;
+  padding: 3em 1em;
+  color: white;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-nav, .footer-social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav a {
+  color: inherit;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav li + li {
+  margin-top: 10px;
+}
+
+.footer-social li + li {
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 50px;
+}
+
+.social-link {
+  display: inline-block;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=style.css.map */

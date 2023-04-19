@@ -17,10 +17,7 @@ section {
   min-height: 100vh;
 }
 
-#accueil {
-  background-image: url(../../../app/img/git-pic.webp);
-  background-repeat: round;
-}
+
 #inscription {
   background-color: rgb(238, 234, 16);
 }
@@ -35,4 +32,6 @@ section {
 }
 #pied-page {
   background-color: rgb(27, 176, 214);
+  height: 100%;
+  position: relative;
 }
