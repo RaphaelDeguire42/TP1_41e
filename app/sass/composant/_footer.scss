@@ -1,0 +1,42 @@
+footer {
+    background: #333;
+    padding: 3em 1em;
+    color: white;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-nav, .footer-social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav a {
+    color: inherit;
+    &:hover {
+            text-decoration: underline;
+    }
+}
+
+.footer-nav li+li {
+    margin-top: 10px;
+}
+
+.footer-social li+li {
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 50px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-bottom: 5px;
+}

@@ -536,6 +536,7 @@ section {
   min-height: 100vh;
 }
 
+
 .entete {
   background-color: #F8F272;
 }
@@ -573,7 +574,13 @@ section {
 }
 
 #pied-page {
+
+
+  height: 100%;
+  position: relative;
+
   background-color: #2E294E;
+
 }
 
 .entete {
@@ -693,6 +700,11 @@ form button:hover {
   cursor: pointer;
 }
 
+.primary-header {
+  background-image: url(../../../app/img/git_pic.webp);
+  background-repeat: round;
+}
+
 .tableau__titre {
   font-weight: bold;
   color: #ffffe8;
@@ -743,6 +755,49 @@ form button:hover {
   flex-direction: column;
 }
 
+
+footer {
+  background: #333;
+  padding: 3em 1em;
+  color: white;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-nav, .footer-social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav a {
+  color: inherit;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav li + li {
+  margin-top: 10px;
+}
+
+.footer-social li + li {
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 50px;
+}
+
+.social-link {
+  display: inline-block;
+  margin-bottom: 5px;
+
 .gallery picture:nth-child(even):hover {
   animation: rotate 10s linear infinite;
 }
@@ -773,4 +828,5 @@ form button:hover {
 }
 #inscription form.grow-cancel {
   animation: none;
+
 }/*# sourceMappingURL=style.css.map */

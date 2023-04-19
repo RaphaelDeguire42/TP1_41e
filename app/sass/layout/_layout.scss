@@ -24,6 +24,7 @@ section {
   min-height: 100vh;
 }
 
+
 .entete{
   background-color: $bgFront;
 }
@@ -45,6 +46,7 @@ section {
   }
   
 
+
 #inscription {
   background-color: $bg1;
 }
@@ -58,5 +60,10 @@ section {
   background-color: $bg4;
 }
 #pied-page {
-  background-color: $bg5;
+
+  background-color: rgb(27, 176, 214);
+  height: 100%;
+  position: relative;
+
+
 }
